@@ -3,7 +3,7 @@
 Voting algorithm test.
 Data is from a conduct risk domain. Sentences are labelled as problematic from a conduct risk perspective or innocent/neutral from a conduct risk perspective. For this exercise models are trained and tested on imbalanced classes. I have printed out the top of both the training and test data sets to give some context to the sentences used in the exercise.
 
-#### There are four custom classes below.
+#### There are four custom classes.
 The "prep" class reads in the test and training data and rebalances the classes if required. In this exercise the class of interest is set at 3% of the entire dataset. It can be set at whatever is needed or just ignored if appropriate. The "clean" class uses Spacy to produce a corpus ready for the pipeline and ultimately the voting algorithm. The "mean embedding class" (not my original code) allows for the word embeddings to be passed to the sklearn pipeline. The "voter" class runs all the pipelines and produces a confusion matrix from the final voting algorithm.
 
 #### Overview of the voting algorithm.
