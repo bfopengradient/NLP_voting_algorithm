@@ -1,6 +1,6 @@
 #### NLP_voting_algorithm
  
-Voting algorithm test.
+#### Voting algorithm test.
 Data is from a conduct risk domain. Sentences are labelled as problematic from a conduct risk perspective or innocent/neutral from a conduct risk perspective. For this exercise models are trained and tested on imbalanced classes. I have printed out the top of both the training and test data sets to give some context to the sentences used in the exercise.
 
 #### There are four custom classes.
