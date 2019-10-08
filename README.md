@@ -10,5 +10,5 @@ This is a natural language processing exercise. The data consists of sentences a
 #### Producing word embeddings from the Facebook Fasttext model and the Google Word2Vec model.
 Each set of embeddings along with labels are passed to four classification algorithms:KNN,Bagging classifier(KNN base), fully connected neural network classifier and extratrees(extremely randomised trees) classifier. Each of these classification algorithms in effect produces a prediction for the voting algorithm but with their own bias-variance characteristics.
 In total there are eight classifiers working in the pipeline ahead of the final voting algorithm. There are four classifiers for each of the two word embedding models.
-The voting algorithm, in this exercise, treats each of of the eight predictions equally in deciding how to classify the unseen test sentences. Results/predictions are summarised in the confusion matrix.
+The voting algorithm, in this exercise, treats each of of the eight predictions equally in deciding how to classify the unseen test sentences. Results/predictions are summarised in the confusion matrix which is contained in the 'nlp_voting_algorithm.ipynb' repo.
 #### Oct 2019
