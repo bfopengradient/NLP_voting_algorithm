@@ -7,8 +7,8 @@ The "prep" class reads in the test and training data and rebalances the classes 
 #### Overview of the voting algorithm.
 This is a natural language processing exercise. The data consists of sentences and accompanying labels. The final task performed in the notebook is to classify sentences that are regarded as ok or problematic. Problem sentences are those viewed as being of concern and would be viewed by a risk person as worthy of further examination. The confusion matrix summarises the accuracy of the voting algorithm. The various classes that are imported are doing the following under the hood:
 
-#### Producing word embeddings from the Facebook Fasttext model and the Google Word2Vec model.
-Each set of embeddings along with labels are passed to four classification algorithms:KNN,Bagging classifier(KNN base), fully connected neural network classifier and extratrees(extremely randomised trees) classifier. Each of these classification algorithms in effect produces a prediction for the voting algorithm but with their own bias-variance characteristics.
-In total there are eight classifiers working in the pipeline ahead of the final voting algorithm. There are four classifiers for each of the two word embedding models.
-The voting algorithm, in this exercise, treats each of of the eight predictions equally in deciding how to classify the unseen test sentences. Results/predictions are summarised in the confusion matrix which is contained in the 'nlp_voting_algorithm.ipynb' repo.
+1. Producing word embeddings from the Facebook Fasttext model and the Google Word2Vec model.
+2. Each set of embeddings along with labels are passed to four classification algorithms:KNN,Bagging classifier(KNN base), fully connected neural network classifier and extratrees(extremely randomised trees) classifier. 
+3. Each of these classification algorithms in effect produces a prediction for the voting algorithm but with their own bias-variance characteristics. In total there are eight classifiers working in the pipeline ahead of the final voting algorithm. There are four classifiers for each of the two word embedding models.
+4. The voting algorithm, in this exercise, treats each of of the eight predictions equally in deciding how to classify the unseen test sentences. Results/predictions are summarised in the confusion matrix which is contained in the 'nlp_voting_algorithm.ipynb' repo.
 #### Oct 2019
