@@ -10,7 +10,7 @@ class prep:
         self.test = test
         self.training = training 
     	
-    #Balances class if needed. Labels are balanced for this exercise.
+    #Balances class if needed. Labels are not balanced for this exercise.
     def balancedata(test,training):      
         training_1 = training[3000:6000]
         result = pd.concat([test,training_1], ignore_index=True)
