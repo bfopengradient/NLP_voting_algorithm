@@ -106,8 +106,7 @@ class voter:
 
 def main():
     test = pd.read_csv('...test_client_dissatisfaction.csv',encoding='utf8')
-    training = pd.read_csv('...training.csv',encoding='utf8')
-    
+    training = pd.read_csv('...training.csv',encoding='utf8')   
     data= prep.balancedata(test,training)
     cleaned_training_corpus = clean.spacy_cleanup(data.Sentences.str.cat(sep='\n'))
     corpus= clean.get_corpus(cleaned_training_corpus) 
@@ -116,7 +115,6 @@ def main():
     ft_embeddings=voter.get_ft_embeddings(corpus) 
     w2v_embeddings=voter.get_w2v_embeddings(corpus)
     voter.run_pipe(ft_embeddings,w2v_embeddings,X_train, X_test, y_train, y_test)
- 
 
 if __name__ == "__main__":
     main()
