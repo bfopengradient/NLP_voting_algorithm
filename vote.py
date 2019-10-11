@@ -105,8 +105,8 @@ class voter:
          
 
 def main():
-    test = pd.read_csv('/Users/brianfarrell/Desktop/test_client_dissatisfaction.csv',encoding='utf8')
-    training = pd.read_csv('/Users/brianfarrell/Desktop/training.csv',encoding='utf8')
+    test = pd.read_csv('...test_client_dissatisfaction.csv',encoding='utf8')
+    training = pd.read_csv('...training.csv',encoding='utf8')
     
     data= prep.balancedata(test,training)
     cleaned_training_corpus = clean.spacy_cleanup(data.Sentences.str.cat(sep='\n'))
